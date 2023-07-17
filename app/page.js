@@ -21,6 +21,7 @@ export default function Home() {
   return (
     <div className="main overflow-x-hidden container mx-auto my-4">
       <Navbar/>
+      <TractorAnimation/>
       <DemandPredictionSoftware/>
       <DemandComparisonChart/>
       <DataAnalysisMap/>
