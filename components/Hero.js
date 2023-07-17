@@ -19,7 +19,7 @@ const DemandPredictionSoftware = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen p-4">
-      
+      <TractorAnimation />
       <h1 className="text-2xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-green-500 to-yellow-500 text-transparent bg-clip-text" data-aos="zoom-out-left">
         Transformando la distribución de alimentos con tecnología innovadora
       </h1>
