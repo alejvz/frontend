@@ -30,7 +30,7 @@ const PreguntasRespuestas = () => {
   };
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8 px-4 md:px-8"> {/* Agrega px-4 md:px-8 para agregar márgenes laterales */}
       <h2 className="text-white text-2xl text-center font-bold mb-4">Preguntas y Respuestas</h2>
       <div className="grid gap-4">
         {preguntasRespuestas.map((item, index) => (
@@ -63,3 +63,5 @@ const PreguntasRespuestas = () => {
 };
 
 export default PreguntasRespuestas;
+
+

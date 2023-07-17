@@ -2,7 +2,6 @@ import { FaArrowDown } from 'react-icons/fa';
 import TractorAnimation from './tractor';
 import { motion } from 'framer-motion';
 
-
 const DemandPredictionSoftware = () => {
   const pulseVariants = {
     initial: {
@@ -19,12 +18,12 @@ const DemandPredictionSoftware = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen p-4">
       <TractorAnimation />
-      <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-green-500 to-yellow-500 text-transparent bg-clip-text" data-aos="zoom-out-left">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-green-500 to-yellow-500 text-transparent bg-clip-text" data-aos="zoom-out-left">
         Transformando la distribución de alimentos con tecnología innovadora
       </h1>
-      <p className="text-lg text-white mb-8" data-aos="zoom-out-right">
+      <p className="text-base sm:text-lg text-white mb-8" data-aos="zoom-out-right">
         Saborea el futuro: la solución foodtech que lleva alimentos frescos directamente a tu puerta
       </p>
       <div data-aos="zoom-in">
@@ -41,4 +40,5 @@ const DemandPredictionSoftware = () => {
 };
 
 export default DemandPredictionSoftware;
+
 

@@ -1,6 +1,6 @@
 'use client'
 import Navbar from '@/components/Navbar'
-import DemandPredictionSoftware from '@/components/DemandPredictionSoftware'
+import DemandPredictionSoftware from '@/components/Hero'
 import ServicesComponent from '@/components/Services'
 import DemandComparisonChart from '@/components/DemandComparisonChart'
 import DataAnalysisMap from '@/components/DataAnalysisMap'
