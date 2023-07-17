@@ -63,8 +63,8 @@ const DemandComparisonChart = () => {
   return (
     <div className="px-6 py-6 lg:px-16 w-full lg:h-[500px] z-[10] bg-cover bg-fixed flex flex-col justify-center items-center">
       <div className="text-center border border-gray-300 rounded-lg p-4 mb-4">
-        <h1 className="text-3xl lg:text-2xl font-bold text-white mb-4 ">Somos una plataforma inteligente que toma decisiones en función de los datos. </h1>
-        <h2 className="text-lg lg:text-xl font-medium text-white mb-4">Buscamos mejorar la cadena de suministro, haciendo más eficiente su distribución, algunos datos de reducción de costos:</h2>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-green-500 to-yellow-500 text-transparent bg-clip-text">Somos una plataforma inteligente que toma decisiones en función de los datos. </h1>
+        <h2 className="text-xl sm:text-xl font-medium text-white mb-4">Buscamos mejorar la cadena de suministro, haciendo más eficiente su distribución, algunos datos de reducción de costos:</h2>
       </div>
 
       <div className={`z-50 flex flex-col md:flex-row justify-between items-stretch gap-5 w-full text-white ${isMobile ? 'flex-col' : ''} ${isTablet ? 'flex-col' : ''}`}>
