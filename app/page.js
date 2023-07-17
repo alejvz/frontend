@@ -1,10 +1,13 @@
 'use client'
 import Navbar from '@/components/Navbar'
 import DemandPredictionSoftware from '@/components/DemandPredictionSoftware'
-import ComplexAnimation from '@/components/ComplexAnimation'
+import ServicesComponent from '@/components/Services'
 import DemandComparisonChart from '@/components/DemandComparisonChart'
 import DataAnalysisMap from '@/components/DataAnalysisMap'
-import WaveAnimation from '@/components/WaveAnimation'
+import TractorAnimation from '@/components/tractor'
+import PreguntasRespuestas from '@/components/q&a'
+import ProductInformation from '@/components/ProductInformation'
+import Footer from '@/components/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
@@ -16,12 +19,16 @@ export default function Home() {
     AOS.init()
   },[])
   return (
-    <div className="main overflow-x-hidden">
+    <div className="main overflow-x-hidden container mx-auto my-4">
       <Navbar/>
       <DemandPredictionSoftware/>
       <DemandComparisonChart/>
       <DataAnalysisMap/>
-      <ComplexAnimation/>
+      <ServicesComponent/>
+      <ProductInformation/>
+      <TractorAnimation/>
+      <PreguntasRespuestas/>
+      <Footer/>
     </div>
   )
 }

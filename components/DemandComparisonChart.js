@@ -3,7 +3,6 @@ import { Line } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
 import CountUp from 'react-countup';
 import { useMediaQuery } from 'react-responsive';
-import { motion } from 'framer-motion';
 
 Chart.register(...registerables);
 
@@ -62,30 +61,44 @@ const DemandComparisonChart = () => {
   const isTablet = useMediaQuery({ query: '(min-width: 768px) and (max-width: 1023px)' });
 
   return (
-    <div className="px-6 py-6 lg:px-16 w-full lg:h-[500px] z-[10] bg-cover bg-fixed flex justify-center items-center">
-      <div className={`z-50 flex flex-col md:flex-row justify-between items-center gap-5 w-full text-white ${isMobile ? 'flex-col' : ''} ${isTablet ? 'flex-col' : ''}`}>
-        <div className="border pr-9 pl-5 py-10 rounded-lg w-full md:w-1/4" data-aos="fade-up-right">
-          <div className="flex flex-col items-center mb-4">
-            <p className='text-[40px] font-bold '>{<CountUp start={0} duration={2.75} end={34000} />}MB</p>
-            <p className='text-[20px] font-500'>Volumen procesados</p>
-          </div>
-          <div className="flex flex-col items-center mb-4">
-            <p className='text-[40px] font-bold '>{<CountUp start={0} duration={2.75} end={1200} />}GB</p>
-            <p className='text-[20px] font-500'>Almacenamiento utilizado</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <p className='text-[40px] font-bold '>{<CountUp start={0} duration={2.75} end={50} />}%</p>
-            <p className='text-[20px] font-500'>Uso de capacidad</p>
-          </div>
+    <div className="px-6 py-6 lg:px-16 w-full lg:h-[500px] z-[10] bg-cover bg-fixed flex flex-col justify-center items-center">
+      <div className="text-center border border-gray-300 rounded-lg p-4 mb-4">
+        <h1 className="text-3xl lg:text-2xl font-bold text-white mb-4 ">Somos una plataforma inteligente que toma decisiones en función de los datos. </h1>
+        <h2 className="text-lg lg:text-xl font-medium text-white mb-4">Buscamos mejorar la cadena de suministro, haciendo más eficiente su distribución, algunos datos de reducción de costos:</h2>
+      </div>
+
+      <div className={`z-50 flex flex-col md:flex-row justify-between items-stretch gap-5 w-full text-white ${isMobile ? 'flex-col' : ''} ${isTablet ? 'flex-col' : ''}`}>
+        <div className="text-center border rounded-lg flex-1 p-5" data-aos="fade-up-right">
+
+          <p className={`text-3xl ${isMobile ? 'md:text-2xl' : 'md:text-4xl'} font-bold mb-2`}>
+            <CountUp start={0} duration={2.75} end={20} />%
+          </p>
+          <p className={`text-lg ${isMobile ? 'md:text-base' : 'md:text-xl'} font-500 mb-2`}>Energía</p>
+
+
+          <p className={`text-3xl ${isMobile ? 'md:text-2xl' : 'md:text-4xl'} font-bold mb-2`}>
+            <CountUp start={0} duration={2.75} end={40} />%
+          </p>
+          <p className={`text-lg ${isMobile ? 'md:text-base' : 'md:text-xl'} font-500 mb-2`}>Tiempo</p>
+
+
+          <p className={`text-3xl ${isMobile ? 'md:text-2xl' : 'md:text-4xl'} font-bold mb-2`}>
+            <CountUp start={0} duration={2.75} end={90} />%
+          </p>
+          <p className={`text-lg ${isMobile ? 'md:text-base' : 'md:text-xl'} font-500 mb-2`}>Inventario óptimo</p>
+
         </div>
 
-        <div className="border pr-9 pl-5 py-10 rounded-lg w-full md:w-3/4" data-aos="fade-up-left">
-          <div>
-            <Line data={data} options={chartOptions} />
+        <div className="border rounded-lg flex-1 p-5" data-aos="fade-up-left">
+          <div className={`aspect-w-3 aspect-h-2 ${isMobile ? 'w-full' : ''}`}>
+            
+              <Line data={data} options={chartOptions} />
+            
           </div>
         </div>
       </div>
     </div>
+
   );
 };
 

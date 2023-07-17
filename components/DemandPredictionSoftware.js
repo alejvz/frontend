@@ -1,5 +1,7 @@
+import { FaArrowDown } from 'react-icons/fa';
+import TractorAnimation from './tractor';
 import { motion } from 'framer-motion';
-import { useMediaQuery } from 'react-responsive';
+
 
 const DemandPredictionSoftware = () => {
   const pulseVariants = {
@@ -16,22 +18,22 @@ const DemandPredictionSoftware = () => {
     },
   };
 
-  // Utilizar useMediaQuery para detectar el tamaño de la pantalla
-  const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
-  const isTablet = useMediaQuery({ query: '(min-width: 768px) and (max-width: 1023px)' });
-
   return (
-    <div className={`flex flex-col items-center justify-center h-screen ${isMobile ? 'p-4' : ''} ${isTablet ? 'p-8' : ''}`}>
-      <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text" data-aos="zoom-out-left">Software de Predicción de Demanda</h1>
+    <div className="flex flex-col items-center justify-center h-screen">
+      <TractorAnimation />
+      <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-green-500 to-yellow-500 text-transparent bg-clip-text" data-aos="zoom-out-left">
+        Transformando la distribución de alimentos con tecnología innovadora
+      </h1>
       <p className="text-lg text-white mb-8" data-aos="zoom-out-right">
-        El software de predicción de demanda te ayuda a anticipar las necesidades de tus clientes y optimizar tu inventario.
+        Saborea el futuro: la solución foodtech que lleva alimentos frescos directamente a tu puerta
       </p>
-      <div ata-aos="zoom-in">
+      <div data-aos="zoom-in">
         <motion.button
           variants={pulseVariants}
           animate="animate"
-          className="bg-gradient-to-r from-red-500 to-yellow-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-          Comenzar ahora
+          className="bg-gradient-to-r from-red-500 to-yellow-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded flex items-center justify-center"
+        >
+          Más información <FaArrowDown className="ml-2" />
         </motion.button>
       </div>
     </div>

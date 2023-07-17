@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { AiOutlineUser, AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { FaTractor, FaStore } from 'react-icons/fa'
 import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 
@@ -38,7 +39,7 @@ const Navbar = () => {
             : 'fixed top-0 right-0 left-0 bg-gradient-to-r from-red-500 to-yellow-500 shadow-sm z-50 ease-linear duration-300 text-black px-8 md:px-16 py-5 flex justify-between items-center'
         }
       >
-        <Image className="" src={toggle ? '/assets/3.png' : '/assets/4.png'} alt="logo" width={178} height={90} />
+        <Image className="" src={toggle ? '/assets/5.png' : '/assets/7.png'} alt="logo" width={178} height={90} />
         {isMobile ? (
           <button
             className={toggle ? 'block md:hidden text-[30px] z-[20]  text-white' : 'block md:hidden text-[30px] z-[20]  text-black'}
@@ -73,22 +74,29 @@ const Navbar = () => {
                 Contacto
               </button>
             </li>
-            <Link href="https://cat.kodeler.com/articles" target="_blank" rel="noopener noreferrer" passHref>
-              <button className="font-[500] hover:text-black duration-75 ease-in">Cat-Blog</button>
-            </Link>
           </ul>
         )}
-        <Link href="https://calendly.com/kodeler/15min" target="_blank" rel="noopener noreferrer" passHref>
+        <Link href="https://calendly.com/" target="_blank" rel="noopener noreferrer" passHref>
           <button className={toggle ? 'hidden md:flex bg-gradient-to-r from-red-500 to-yellow-500 rounded-full text-black items-center gap-2 px-7 py-2' : 'hidden md:flex items-center gap-2 bg-black text-white rounded-full px-7 py-2'}>
-            <AiOutlineUser />Agendar Servicios
+            <FaStore />Comercio
+          </button>
+        </Link>
+        <Link href="https://calendly.com/" target="_blank" rel="noopener noreferrer" passHref>
+          <button className={toggle ? 'hidden md:flex bg-gradient-to-r from-green-500 to-yellow-500 rounded-full text-black items-center gap-2 px-7 py-2' : 'hidden md:flex items-center gap-2 bg-black text-white rounded-full px-7 py-2'}>
+            <FaTractor />Productor
           </button>
         </Link>
       </nav>
       {isMobile && (
         <div className={menu ? 'shadow-md py-6 space-y-4 z-[50] bg-gray-100 text-neutral-900 px-5 text-lg font-semibold fixed top-[89px] duration-500 ease-in w-full' : 'w-full duration-500 ease-in-out bg-gray-100 text-neutral-600 px-5 text-lg font-semibold absolute -top-[400px]'}>
-          <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
-            <AiOutlineUser />Agendar Servicios
-          </button>
+          <div className="flex justify-center"> {/* Agrega esta línea para centrar los botones */}
+            <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
+              <FaStore />Comercio
+            </button>
+            <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
+              <FaTractor />Productor
+            </button>
+          </div>
         </div>
       )}
     </>
