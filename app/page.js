@@ -7,6 +7,7 @@ import DataAnalysisMap from '@/components/DataAnalysisMap'
 import TractorAnimation from '@/components/tractor'
 import PreguntasRespuestas from '@/components/q&a'
 import ProductInformation from '@/components/ProductInformation'
+import EmbeddedForm from '@/components/EmbeddedForm'
 import Footer from '@/components/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -26,6 +27,7 @@ export default function Home() {
       <DataAnalysisMap/>
       <ServicesComponent/>
       <ProductInformation/>
+      <EmbeddedForm/>
       <TractorAnimation/>
       <PreguntasRespuestas/>
       <Footer/>
