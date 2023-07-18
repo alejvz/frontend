@@ -64,28 +64,28 @@ const DemandComparisonChart = () => {
     <div className="px-6 py-6 lg:px-16 w-full lg:h-[500px] z-[10] bg-cover bg-fixed flex flex-col justify-center items-center">
       <div className="text-center border border-gray-300 rounded-lg p-4 mb-4">
         <h1 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-green-500 to-yellow-500 text-transparent bg-clip-text">Somos una plataforma inteligente que toma decisiones en función de los datos. </h1>
-        <h2 className="text-xl sm:text-xl font-medium text-white mb-4">En nuestra startup de logística para el transporte de alimentos, aprovechamos la potencia de la inteligencia artificial (IA) para revolucionar la forma en que gestionamos la demanda de productos y realizamos envíos eficientes. Nuestra estrategia se centra en optimizar los siguientes aspectos clave:</h2>
+        <h2 className="text-xl sm:text-xl font-medium text-white mb-4">En nuestra plataforma de logística, aprovechamos la potencia de la inteligencia artificial (IA) para revolucionar la forma en que gestionamos la demanda de productos y realizamos envíos eficientes. Nuestra estrategia se centra en optimizar los siguientes aspectos clave:</h2>
       </div>
 
       <div className={`z-50 flex flex-col md:flex-row justify-between items-stretch gap-5 w-full text-white ${isMobile ? 'flex-col' : ''} ${isTablet ? 'flex-col' : ''}`}>
         <div className="text-center border rounded-lg flex-1 p-5" data-aos="fade-up-right">
 
           <p className={`text-3xl ${isMobile ? 'md:text-2xl' : 'md:text-4xl'} font-bold mb-2`}>
+            <CountUp start={0} duration={2.75} end={30} />%
+          </p>
+          <p className={`text-lg ${isMobile ? 'md:text-base' : 'md:text-xl'} font-500 mb-2`}>De ahorro evitando el desperdicio de alimentos</p>
+
+
+          <p className={`text-3xl ${isMobile ? 'md:text-2xl' : 'md:text-4xl'} font-bold mb-2`}>
             <CountUp start={0} duration={2.75} end={20} />%
           </p>
-          <p className={`text-lg ${isMobile ? 'md:text-base' : 'md:text-xl'} font-500 mb-2`}>Energía</p>
+          <p className={`text-lg ${isMobile ? 'md:text-base' : 'md:text-xl'} font-500 mb-2`}> En ahorro en transporte</p>
 
 
           <p className={`text-3xl ${isMobile ? 'md:text-2xl' : 'md:text-4xl'} font-bold mb-2`}>
-            <CountUp start={0} duration={2.75} end={40} />%
+            <CountUp start={0} duration={2.75} end={10} />%
           </p>
-          <p className={`text-lg ${isMobile ? 'md:text-base' : 'md:text-xl'} font-500 mb-2`}>Tiempo</p>
-
-
-          <p className={`text-3xl ${isMobile ? 'md:text-2xl' : 'md:text-4xl'} font-bold mb-2`}>
-            <CountUp start={0} duration={2.75} end={90} />%
-          </p>
-          <p className={`text-lg ${isMobile ? 'md:text-base' : 'md:text-xl'} font-500 mb-2`}>Inventario óptimo</p>
+          <p className={`text-lg ${isMobile ? 'md:text-base' : 'md:text-xl'} font-500 mb-2`}>De ahorro en los costos de almacenamiento</p>
 
         </div>
 
