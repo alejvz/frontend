@@ -4,8 +4,9 @@ import Link from 'next/link';
 import { IoArrowBack } from 'react-icons/io5';
 import { FaSpinner } from 'react-icons/fa';
 
+//<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLhMrMwBuybky9HjRKnaioeF_Jyo9-pEeGmCV3JvMTywhCuQ/viewform?embedded=true" width="640" height="4069" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
 
-const FarmerForm = () => {
+const TrucksForm = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -28,9 +29,9 @@ const FarmerForm = () => {
       ) : (
         <div className="w-full max-w-sm md:max-w-lg overflow-hidden">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLScBhNleqv2O7YEoyJ1bQtT1iQavi8QQho3NMaxwX_gqrmOtuQ/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdLhMrMwBuybky9HjRKnaioeF_Jyo9-pEeGmCV3JvMTywhCuQ/viewform?embedded=true"
             width="100%"
-            height="1900"
+            height="4800"
           >
             Cargando...
           </iframe>
@@ -40,4 +41,4 @@ const FarmerForm = () => {
   );
 };
 
-export default FarmerForm ;
+export default TrucksForm;

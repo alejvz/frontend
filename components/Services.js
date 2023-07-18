@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesComponent = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center py-8">
+    <div className="flex flex-wrap justify-center items-center py-8" id="servicesComponent">
       <div className="w-full">
         <h2 className="text-white text-2xl font-bold text-center mb-8">
           Nuestros Servicios

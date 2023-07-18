@@ -53,27 +53,27 @@ const Navbar = () => {
           ) : (
             <ul className="md:flex space-x-7 hidden pr-8">
               <li>
-                <button className="font-[500] hover:text-black  duration-75 ease-in" onClick={() => scrollToComponent('heroComponent')}>
+                <button className="font-[500] hover:text-yellow-500  duration-75 ease-in" onClick={() => scrollToComponent('heroComponent')}>
                   Inicio
                 </button>
               </li>
               <li>
-                <button className="font-[500] hover:text-black  duration-75 ease-in" onClick={() => scrollToComponent('servicesComponent')}>
+                <button className="font-[500] hover:text-yellow-500 duration-75 ease-in" onClick={() => scrollToComponent('servicesComponent')}>
                   Servicios
                 </button>
               </li>
               <li>
-                <button className="font-[500] hover:text-black  duration-75 ease-in" onClick={() => scrollToComponent('howWeWorkComponent')}>
+                <button className="font-[500] hover:text-yellow-500  duration-75 ease-in" onClick={() => scrollToComponent('howWeWorkComponent')}>
                   ¿Cómo trabajamos?
                 </button>
               </li>
               <li>
-                <button className="font-[500] hover:text-black  duration-75 ease-in" onClick={() => scrollToComponent('pricingComponent')}>
-                  Precios
+                <button className="font-[500] hover:text-yellow-500  duration-75 ease-in" onClick={() => scrollToComponent('Q&A')}>
+                  Q&A
                 </button>
               </li>
               <li>
-                <button className="font-[500] hover:text-black  duration-75 ease-in" onClick={() => scrollToComponent('contactComponent')}>
+                <button className="font-[500] hover:text-yellow-500  duration-75 ease-in" onClick={() => scrollToComponent('contactComponent')}>
                   Contacto
                 </button>
               </li>
@@ -81,12 +81,12 @@ const Navbar = () => {
           )}
         </div>
         <ul className="md:flex space-x-5 hidden">
-        <Link href="https://lulai.co/suplier" target="_blank" rel="noopener noreferrer" passHref>
+        <Link href="/suplier" passHref>
           <button className={toggle ? 'hidden md:flex bg-gradient-to-r from-red-500 to-yellow-500 rounded-full text-black items-center gap-2 px-7 py-2' : 'hidden md:flex items-center gap-2 bg-black text-white rounded-full px-7 py-2'}>
             <FaStore />Comercio
           </button>
         </Link>
-        <Link href="https://lulai.co/farmer" target="_blank" rel="noopener noreferrer" passHref>
+        <Link href="/farmer" passHref>
           <button className={toggle ? 'hidden md:flex bg-gradient-to-r from-green-500 to-yellow-500 rounded-full text-black items-center gap-2 px-7 py-2' : 'hidden md:flex items-center gap-2 bg-black text-white rounded-full px-7 py-2'}>
             <FaTractor />Productor
           </button>
@@ -96,12 +96,12 @@ const Navbar = () => {
       {isMobile && (
         <div className={menu ? 'shadow-md py-6 space-y-4 z-[50] bg-gray-100 text-neutral-900 px-5 text-lg font-semibold fixed top-[89px] duration-500 ease-in w-full' : 'w-full duration-500 ease-in-out bg-gray-100 text-neutral-600 px-2 text-lg font-semibold absolute -top-[400px]'}>
           <div className="flex justify-center space-x-4"> {/* Agrega esta línea para centrar los botones */}
-            <Link href="https://lulai.co/suplier" passHref>
+            <Link href="/suplier" passHref>
               <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
                 <FaStore />Comercio
               </button>
             </Link>
-            <Link href="https://lulai.co/farmer" passHref>
+            <Link href="/farmer" passHref>
               <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
                 <FaTractor />Productor
               </button>

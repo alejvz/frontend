@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { IoArrowBack } from 'react-icons/io5';
 import { FaSpinner } from 'react-icons/fa';
 
@@ -15,10 +16,10 @@ const SuplierForm = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <h1 className="text-2xl font-bold mb-4">Contacto</h1>
-      <a href="/" className="flex items-center text-orange-600 hover:text-white mb-4">
+      <Link href="/" className="flex items-center text-orange-600 hover:text-white mb-4">
         <IoArrowBack className="mr-2" />
         Volver al menú principal
-      </a>
+      </Link>
       {loading ? (
         <div className="flex items-center justify-center h-64">
           <FaSpinner className="animate-spin text-4xl text-orange-500" />
