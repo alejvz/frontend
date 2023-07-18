@@ -86,7 +86,7 @@ const Navbar = () => {
             <FaStore />Comercio
           </button>
         </Link>
-        <Link href="https://lulai.co/" target="_blank" rel="noopener noreferrer" passHref>
+        <Link href="https://lulai.co/farmer" target="_blank" rel="noopener noreferrer" passHref>
           <button className={toggle ? 'hidden md:flex bg-gradient-to-r from-green-500 to-yellow-500 rounded-full text-black items-center gap-2 px-7 py-2' : 'hidden md:flex items-center gap-2 bg-black text-white rounded-full px-7 py-2'}>
             <FaTractor />Productor
           </button>
@@ -101,7 +101,7 @@ const Navbar = () => {
                 <FaStore />Comercio
               </button>
             </Link>
-            <Link href="https://lulai.co/" target="_blank" rel="noopener noreferrer" passHref>
+            <Link href="https://lulai.co/farmer" target="_blank" rel="noopener noreferrer" passHref>
               <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
                 <FaTractor />Productor
               </button>

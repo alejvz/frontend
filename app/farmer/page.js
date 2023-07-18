@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { IoArrowBack } from 'react-icons/io5';
 import { FaSpinner } from 'react-icons/fa';
 
-const suplierForm = () => {
+const farmerForm = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const suplierForm = () => {
       ) : (
         <div className="w-full max-w-sm md:max-w-lg overflow-hidden">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSe2wE879coesYb3hUnv2CFBFurQJBLdIe4ytOLP8PAXyAYHDw/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScBhNleqv2O7YEoyJ1bQtT1iQavi8QQho3NMaxwX_gqrmOtuQ/viewform?embedded=true"
             width="100%"
             height="1900"
           >
@@ -38,4 +38,4 @@ const suplierForm = () => {
   );
 };
 
-export default suplierForm;
+export default farmerForm ;
