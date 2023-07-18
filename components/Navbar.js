@@ -96,12 +96,12 @@ const Navbar = () => {
       {isMobile && (
         <div className={menu ? 'shadow-md py-6 space-y-4 z-[50] bg-gray-100 text-neutral-900 px-5 text-lg font-semibold fixed top-[89px] duration-500 ease-in w-full' : 'w-full duration-500 ease-in-out bg-gray-100 text-neutral-600 px-2 text-lg font-semibold absolute -top-[400px]'}>
           <div className="flex justify-center space-x-4"> {/* Agrega esta línea para centrar los botones */}
-            <Link href="https://lulai.co/suplier" target="_blank" rel="noopener noreferrer" passHref>
+            <Link href="https://lulai.co/suplier" passHref>
               <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
                 <FaStore />Comercio
               </button>
             </Link>
-            <Link href="https://lulai.co/farmer" target="_blank" rel="noopener noreferrer" passHref>
+            <Link href="https://lulai.co/farmer" passHref>
               <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
                 <FaTractor />Productor
               </button>
