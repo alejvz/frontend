@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { IoArrowBack } from 'react-icons/io5';
 import { FaSpinner } from 'react-icons/fa';
 
-const suplierForm = () => {
+const SuplierForm = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -38,4 +38,4 @@ const suplierForm = () => {
   );
 };
 
-export default suplierForm;
+export default SuplierForm;

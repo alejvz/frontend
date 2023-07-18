@@ -4,7 +4,7 @@ import { IoArrowBack } from 'react-icons/io5';
 import { FaSpinner } from 'react-icons/fa';
 
 
-const farmerForm = () => {
+const FarmerForm = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -39,4 +39,4 @@ const farmerForm = () => {
   );
 };
 
-export default farmerForm ;
+export default FarmerForm ;
