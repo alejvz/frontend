@@ -24,7 +24,7 @@ const DemandPredictionSoftware = () => {
         Transformando la distribución de alimentos con tecnología innovadora
       </h1>
       <p className="text-base sm:text-lg text-white mb-8" data-aos="zoom-out-right">
-        Saborea el futuro: la solución foodtech que lleva alimentos frescos directamente a tu puerta
+      Envíos eficientes y pronóstico preciso de demanda con IA. Optimización logística basada en algoritmos avanzados. Revoluciona tu logística con nuestra tecnología vanguardista.
       </p>
       <div data-aos="zoom-in">
         <motion.button
