@@ -23,7 +23,7 @@ const DemandPredictionSoftware = () => {
       className="flex flex-col items-center justify-center h-screen p-4"
       id="heroComponent"
       style={{
-        backgroundImage: `url("/assets/025.jpg")`,
+        backgroundImage: `url("/assets/026.jpg")`,
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover', // You can adjust this as needed
       }}
@@ -35,7 +35,7 @@ const DemandPredictionSoftware = () => {
       >
         Transformando la distribución de alimentos con tecnología innovadora
       </h1>
-      <p className="text-xl font-bold sm:text-lg text-gray-300  mb-8" data-aos="zoom-out-right">
+      <p className="text-base font-bold sm:text-lg text-gray-300  mb-8" data-aos="zoom-out-right">
         Envíos eficientes y pronóstico preciso de demanda con IA. Optimización logística basada en algoritmos avanzados. Revoluciona tu logística con nuestra tecnología vanguardista.
       </p>
       <div data-aos="zoom-in">
