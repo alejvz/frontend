@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaArrowDown } from 'react-icons/fa';
 import TractorAnimation from './tractor';
 import { motion } from 'framer-motion';
@@ -5,27 +6,37 @@ import { motion } from 'framer-motion';
 const DemandPredictionSoftware = () => {
   const pulseVariants = {
     initial: {
-      y: 0, // Posición inicial del botón
+      y: 0,
     },
     animate: {
-      y: 20, // Posición final del botón
+      y: 20,
       transition: {
-        duration: 1, // Duración de la animación en segundos
-        repeat: Infinity, // Repetir la animación indefinidamente
-        repeatType: "reverse", // Invertir la animación al repetirse
+        duration: 1,
+        repeat: Infinity,
+        repeatType: "reverse",
       },
     },
   };
 
-
   return (
-    <div className="flex flex-col items-center justify-center h-screen p-4" id="heroComponent">
+    <div
+      className="flex flex-col items-center justify-center h-screen p-4"
+      id="heroComponent"
+      style={{
+        backgroundImage: `url("/assets/024.jpg")`,
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover', // You can adjust this as needed
+      }}
+    >
       <TractorAnimation />
-      <h1 className="text-2xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-green-500 to-yellow-500 text-transparent bg-clip-text" data-aos="zoom-out-left">
+      <h1
+        className="text-2xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-green-500 to-yellow-500 text-transparent bg-clip-text"
+        data-aos="zoom-out-left"
+      >
         Transformando la distribución de alimentos con tecnología innovadora
       </h1>
       <p className="text-base sm:text-lg text-white mb-8" data-aos="zoom-out-right">
-      Envíos eficientes y pronóstico preciso de demanda con IA. Optimización logística basada en algoritmos avanzados. Revoluciona tu logística con nuestra tecnología vanguardista.
+        Envíos eficientes y pronóstico preciso de demanda con IA. Optimización logística basada en algoritmos avanzados. Revoluciona tu logística con nuestra tecnología vanguardista.
       </p>
       <div data-aos="zoom-in">
         <motion.button
@@ -41,5 +52,7 @@ const DemandPredictionSoftware = () => {
 };
 
 export default DemandPredictionSoftware;
+
+
 
 
