@@ -7,6 +7,7 @@ import DataAnalysisMap from '@/components/howWeWorkComponent'
 import TractorAnimation from '@/components/tractor'
 import PreguntasRespuestas from '@/components/q&a'
 import ProductInformation from '@/components/ProductInformation'
+import ProductDistribution from '@/components/Products'
 import Footer from '@/components/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,6 +23,7 @@ export default function Home() {
     <div className="main overflow-x-hidden container mx-auto my-4">
       <Navbar/>
       <DemandPredictionSoftware/>
+      <ProductDistribution/>
       <DemandComparisonChart/>
       <DataAnalysisMap/>
       <ServicesComponent/>
