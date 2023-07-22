@@ -23,7 +23,7 @@ const DemandPredictionSoftware = () => {
       className="flex flex-col items-center justify-center h-screen p-4"
       id="heroComponent"
       style={{
-        backgroundImage: `url("/assets/024.jpg")`,
+        backgroundImage: `url("/assets/025.jpg")`,
         backgroundAttachment: 'fixed',
         backgroundSize: 'cover', // You can adjust this as needed
       }}
