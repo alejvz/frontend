@@ -35,7 +35,7 @@ const DemandPredictionSoftware = () => {
       >
         Transformando la distribución de alimentos con tecnología innovadora
       </h1>
-      <p className="text-base font-bold sm:text-lg text-gray-300  mb-8" data-aos="zoom-out-right">
+      <p className="text-base font-bold sm:text-lg text-white  mb-8" data-aos="zoom-out-right">
         Envíos eficientes y pronóstico preciso de demanda con IA. Optimización logística basada en algoritmos avanzados. Revoluciona tu logística con nuestra tecnología vanguardista.
       </p>
       <div data-aos="zoom-in">
