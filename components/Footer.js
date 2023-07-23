@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="text-center md:text-left mt-4 md:mt-0">
           <p className="text-white">Contacto:</p>
           <p className="text-white">Correo electrónico: contacto@lulai.co</p>
-          <p className="text-white">Whatsapp: +57 322 7391062 - +57 321 2497460</p>
+          <p className="text-white">Whatsapp: +57 000 0000000</p>
         </div>
       </div>
       <div className="container mx-auto mt-4 text-center px-4">
