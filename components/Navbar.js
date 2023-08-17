@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { AiOutlineUser, AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { FaTractor, FaStore } from 'react-icons/fa'
+import { AiOutlineLogin, AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { FaWhatsapp } from 'react-icons/fa'
 import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 
@@ -36,11 +36,11 @@ const Navbar = () => {
         className={
           toggle
             ? 'fixed top-0 right-0 left-0 ease-linear duration-300 px-8 md:px-16 py-5 text-white flex justify-between items-center'
-            : 'fixed top-0 right-0 left-0 bg-gradient-to-r from-red-500 to-yellow-500 shadow-sm z-50 ease-linear duration-300 text-black px-8 md:px-16 py-5 flex justify-between items-center'
+            : 'fixed top-0 right-0 left-0 bg-gradient-to-r from-[#FFFFFF] to-[#38B6FF] shadow-sm z-50 ease-linear duration-300 text-black px-8 md:px-16 py-5 flex justify-between items-center'
         }
       >
         <div className="flex items-center mr-auto"> {/* Agrega esta línea para mover el logo al extremo izquierdo */}
-          <Image className="" src={toggle ? '/assets/5.png' : '/assets/7.png'} alt="logo" width={178} height={90} />
+          <Image className="" src={toggle ? '/assets/logo1.png' : '/assets/logo2.png'} alt="logo" width={178} height={90} />
         </div>
         <div> {/* Deja este contenedor sin clase para mantener los botones de Comercio y Productor alineados al centro */}
           {isMobile ? (
@@ -58,7 +58,7 @@ const Navbar = () => {
                 </button>
               </li>
               <li>
-                <button className="font-[500] hover:text-yellow-500 duration-75 ease-in" onClick={() => scrollToComponent('servicesComponent')}>
+                <button className="font-[500] hover:text-yellow-500 duration-75 ease-in" onClick={() => scrollToComponent('DescriptionService')}>
                   Servicios
                 </button>
               </li>
@@ -82,13 +82,13 @@ const Navbar = () => {
         </div>
         <ul className="md:flex space-x-5 hidden">
         <Link href="/suplier" passHref>
-          <button className={toggle ? 'hidden md:flex bg-gradient-to-r from-red-500 to-yellow-500 rounded-full text-black items-center gap-2 px-7 py-2' : 'hidden md:flex items-center gap-2 bg-black text-white rounded-full px-7 py-2'}>
-            <FaStore />Comercio
+          <button className={toggle ? 'hidden md:flex bg-gradient-to-r bg-gradient-to-r from-[#FFFFFF] to-[#38B6FF] rounded-full text-black items-center gap-2 px-7 py-2' : 'hidden md:flex items-center gap-2 bg-black text-white rounded-full px-7 py-2'}>
+            <AiOutlineLogin />Registrarse
           </button>
         </Link>
         <Link href="/farmer" passHref>
-          <button className={toggle ? 'hidden md:flex bg-gradient-to-r from-green-500 to-yellow-500 rounded-full text-black items-center gap-2 px-7 py-2' : 'hidden md:flex items-center gap-2 bg-black text-white rounded-full px-7 py-2'}>
-            <FaTractor />Productor
+          <button className={toggle ? 'hidden md:flex bg-gradient-to-r bg-gradient-to-r from-[#FFFFFF] to-[#ED0690] rounded-full text-black items-center gap-2 px-7 py-2' : 'hidden md:flex items-center gap-2 bg-black text-white rounded-full px-7 py-2'}>
+            <FaWhatsapp />WhatsappChat
           </button>
         </Link>
         </ul>
@@ -97,13 +97,13 @@ const Navbar = () => {
         <div className={menu ? 'shadow-md py-6 space-y-4 z-[50] bg-gray-100 text-neutral-900 px-5 text-lg font-semibold fixed top-[89px] duration-500 ease-in w-full' : 'w-full duration-500 ease-in-out bg-gray-100 text-neutral-600 px-2 text-lg font-semibold absolute -top-[400px]'}>
           <div className="flex justify-center space-x-4"> {/* Agrega esta línea para centrar los botones */}
             <Link href="/suplier" passHref>
-              <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
-                <FaStore />Comercio
+              <button className="flex items-center gap-2 bg-gradient-to-r bg-gradient-to-r from-[#FFFFFF] to-[#38B6FF]  text-black rounded-full px-7 py-2">
+                <AiOutlineLogin />Registrarse
               </button>
             </Link>
             <Link href="/farmer" passHref>
-              <button className="flex items-center gap-2 bg-gradient-to-r from-red-500 to-yellow-500 text-black rounded-full px-7 py-2">
-                <FaTractor />Productor
+              <button className="flex items-center gap-2 bg-gradient-to-r bg-gradient-to-r from-[#FFFFFF] to-[#38B6FF]  text-black rounded-full px-7 py-2">
+                <FaWhatsapp />WhatsappChat
               </button>
             </Link>
           </div>

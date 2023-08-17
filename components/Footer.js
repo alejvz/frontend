@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import { FaWhatsapp } from 'react-icons/fa'
+
+const whatsappNumber = '+573016000000'
 
 const Footer = () => {
   return (
@@ -11,19 +14,20 @@ const Footer = () => {
           <Link href="/terminos-y-condiciones">
             <span className="text-white hover:underline mr-4">Términos y Condiciones</span>
           </Link>
-          <Link href="/trucks">
-            <span className="text-white hover:underline">Truck subscription</span>
-          </Link>
         </div>
         <div className="text-center md:text-left mt-4 md:mt-0">
           <p className="text-white">Contacto:</p>
-          <p className="text-white">Correo electrónico: contacto@lulai.co</p>
-          <p className="text-white">Whatsapp: +57 000 0000000</p>
+          <p className="text-white">Correo electrónico: help@percibot.com</p>
+            <button className="hidden md:flex bg-gradient-to-r bg-gradient-to-r from-[#FFFFFF] to-[#38B6FF] rounded-full text-black items-center gap-2 px-7 py-2"
+              href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp />{whatsappNumber}
+            </button>
+
         </div>
       </div>
       <div className="container mx-auto mt-4 text-center px-4">
         <p className="text-white">
-          © {new Date().getFullYear()} lulai foodtech. Todos los derechos reservados.
+          © {new Date().getFullYear()} PERCI Technology. Todos los derechos reservados.
         </p>
       </div>
     </footer>

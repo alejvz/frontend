@@ -106,3 +106,25 @@ nav{
   .swiper-button-next , .swiper-button-prev {
     margin:0px 20px !important;
   }
+/* modification scrollbar */
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ED0690;
+    border-radius: 5px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #38B6FF;
+}

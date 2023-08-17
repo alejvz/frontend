@@ -1,13 +1,12 @@
 'use client'
 import Navbar from '@/components/Navbar'
-import DemandPredictionSoftware from '@/components/Hero'
+import ChatbotHero from '@/components/ChatbotHero'
 import ServicesComponent from '@/components/Services'
-import DemandComparisonChart from '@/components/DemandComparisonChart'
-import DataAnalysisMap from '@/components/howWeWorkComponent'
+import ComponentServices from '@/components/ComponentServices'
 import TractorAnimation from '@/components/tractor'
-import PreguntasRespuestas from '@/components/q&a'
-import ProductInformation from '@/components/ProductInformation'
+import DescriptionService from '@/components/DescriptionService'
 import ProductDistribution from '@/components/Products'
+import Table from '@/components/table'
 import Footer from '@/components/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,14 +21,11 @@ export default function Home() {
   return (
     <div className="main overflow-x-hidden container mx-auto my-4">
       <Navbar/>
-      <DemandPredictionSoftware/>
-      <ProductDistribution/>
-      <DemandComparisonChart/>
-      <DataAnalysisMap/>
-      <ServicesComponent/>
-      <ProductInformation/>
-      <TractorAnimation/>
-      <PreguntasRespuestas/>
+      <ChatbotHero/>
+      <DescriptionService/>
+      <ComponentServices/>
+      {/*<ServicesComponent/>
+      <TractorAnimation/>*/}
       <Footer/>
     </div>
   )
